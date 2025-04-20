@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Radar Ultrasonido</title>
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+        <div id="controls" class="controls">
+            <h1>Radar con ultrasonido</h1>
+            <button onclick="connectSerial()">Conectar</button>
+        </div>
+        <canvas id="radarCanvas"></canvas>
+        <ul>
+            <li>
+                <span>Ángulo</span>
+                <span id="angulo">0°</span></li>
+            <li>
+                <span>Distancia</span>
+                <span id="distancia">0cm</span>
+            </li>
+        </ul>
+        <a href="#" class="btn-arduino" id="codigoArduino">¿Código de Arduino?</a>
+        <script src="./script.js" defer></script>
+    </body>
+</html>

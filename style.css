@@ -1,0 +1,114 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+    user-select: none;
+}
+
+body {
+    background-color: green;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100dvh;
+    width: 100dvw;
+    gap: 5dvh;
+}
+
+h1 {
+    color: white;
+    font-size: 4dvh;
+    text-align: center;
+    overflow-wrap: anywhere;
+}
+
+.controls {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1dvh;
+}
+
+.controls * {
+    display: flex;
+    padding: 1dvh 2dvh;
+    border-radius: 1dvh;
+    border: none;
+}
+
+.controls button {
+    font-size: 2svh;
+    cursor: pointer;
+}
+
+.controls button:hover {
+    background-color: white;
+}
+
+.controls button:active {
+    background-color: antiquewhite;
+}
+
+canvas {
+    display: flex;
+    width: 80dvw;
+    aspect-ratio: 4/3;
+    max-width: 60dvh;
+    border-radius: 2dvh;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    width: 80dvw;
+    max-width: 40dvh;
+    border: 0.25dvh solid black;
+}
+
+li {
+    font-size: 3dvh;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+}
+
+li > span {
+    border: 0.25dvh solid black;
+    padding: 0.5dvh 1dvh;
+}
+
+li > span:first-child {
+    width: 70%;
+}
+
+li > span:last-child {
+    width: 30%;
+    text-align: center;
+}
+
+.btn-arduino {
+    position: absolute;
+    bottom: 2dvh;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 2.5dvh;
+    background-color: transparent;
+    color: white;
+}
+
+.btn-arduino:hover {
+    color: antiquewhite;
+}
+
+.btn-arduino:active {
+    color: cornsilk;
+}
+
+@media screen and (max-width: 300px) {
+    li {
+        font-size: 2dvh;
+    }
+}
